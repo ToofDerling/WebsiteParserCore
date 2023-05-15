@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebsiteParserCore", "Source\WebsiteParserCore\WebsiteParserCore.csproj", "{1E2011A2-21F3-416A-A401-867D2F5264F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebsiteParserCore", "Source\WebsiteParserCore\WebsiteParserCore.csproj", "{1E2011A2-21F3-416A-A401-867D2F5264F9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebsiteParserCore.Tests", "Source\WebsiteParserCore.Tests\WebsiteParserCore.Tests.csproj", "{A65E26B4-34A3-4DDB-BF5A-B3D954A2900A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebsiteParser.Tests", "WebsiteParser.Tests\WebsiteParser.Tests.csproj", "{9F49B4C8-E1CE-41F5-ABE4-42BAB584393A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebsiteParser", "WebsiteParser\WebsiteParser.csproj", "{92EEE122-046F-422A-81A3-5A003961A1EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{1E2011A2-21F3-416A-A401-867D2F5264F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E2011A2-21F3-416A-A401-867D2F5264F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E2011A2-21F3-416A-A401-867D2F5264F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A65E26B4-34A3-4DDB-BF5A-B3D954A2900A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A65E26B4-34A3-4DDB-BF5A-B3D954A2900A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A65E26B4-34A3-4DDB-BF5A-B3D954A2900A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A65E26B4-34A3-4DDB-BF5A-B3D954A2900A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F49B4C8-E1CE-41F5-ABE4-42BAB584393A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F49B4C8-E1CE-41F5-ABE4-42BAB584393A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F49B4C8-E1CE-41F5-ABE4-42BAB584393A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F49B4C8-E1CE-41F5-ABE4-42BAB584393A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92EEE122-046F-422A-81A3-5A003961A1EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92EEE122-046F-422A-81A3-5A003961A1EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92EEE122-046F-422A-81A3-5A003961A1EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92EEE122-046F-422A-81A3-5A003961A1EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
