@@ -71,16 +71,31 @@ namespace WebsiteParserCore
             HtmlDocument document = new HtmlDocument();
             document.LoadHtml(content);
 
-            HtmlNode mainNode = document.DocumentNode.QuerySelector(listAttribute.Selector);
+            HtmlNode mainNode;
             IEnumerable<HtmlNode> listNodes;
 
-            if (string.IsNullOrEmpty(listAttribute.ChildSelector))
-                listNodes = mainNode.ChildNodes;
+            if (string.IsNullOrEmpty(listAttribute.Selector))
+            {
+                mainNode = document.DocumentNode;
+            }
             else
+            {
+                mainNode = document.DocumentNode.QuerySelector(listAttribute.Selector);
+            }
+
+            if (string.IsNullOrEmpty(listAttribute.ChildSelector))
+            {
+                listNodes = mainNode.ChildNodes;
+            }
+            else
+            {
                 listNodes = mainNode.QuerySelectorAll(listAttribute.ChildSelector);
+            }
 
             foreach (var item in listNodes)
+            {
                 yield return Parse(type, item);
+            }
         }
         #endregion
 

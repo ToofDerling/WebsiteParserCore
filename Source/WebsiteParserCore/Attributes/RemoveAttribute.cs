@@ -30,7 +30,8 @@ namespace WebsiteParserCore.Attributes
                     break;
             }
 
-            return output.Trim();
+            output = output.Trim();
+            return output;
         }
 
     }
